@@ -1,0 +1,13 @@
+<students>
+	<student sr='1' no='a'>
+		<std_name>alamin</std_name>
+		<id>12</id>
+		<cgpa>3</cgpa>
+	</student>
+
+	<student sr='2' no='b'>
+		<std_name>alamin</std_name>
+		<id>12</id>
+		<cgpa></cgpa>
+	</student>
+</students>
