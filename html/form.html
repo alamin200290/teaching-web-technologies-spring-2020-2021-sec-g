@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Form tag</title>
+</head>
+<body>
+
+	<form action="" method="">
+		<fieldset>
+			<legend>Registration</legend>
+
+			<table >
+				<tr>
+					<td>username:</td>
+					<td><input type="text" name="username" value="" placeholder="username" /></td>
+				</tr>
+				<tr>
+					<td>ID: </td>
+					<td> <input type="number" name="id" value="" /> </td>
+				</tr>
+				<tr>
+					<td>password: </td>
+					<td> <input type="password" name="password" value="" /> </td>
+				</tr>
+				<tr>
+					<td>email: </td>
+					<td> <input type="email" name="email" value="" /> </td>
+				</tr>
+				<tr>
+					<td>DOB: </td>
+					<td> <input type="date" name="dob" value="" /> </td>
+				</tr>
+				<tr>
+					<td>Add: </td>
+					<td> <textarea></textarea> </td>
+				</tr>
+				<tr>
+					<td>Gender: </td>
+					<td>  
+						<input type="radio" name="gender"> Male
+						<input type="radio" name="gender"> Female
+						<input type="radio" name="gender"> Other 
+					</td>
+				</tr>
+				<tr>
+					<td>Dept: </td>
+					<td>  
+						<select name="dept">
+							<option value=""></option>
+							<option value="">CS</option>
+							<option value="">CSE</option>
+							<option value="" >CIS</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ext: </td>
+					<td>  
+						<input type="checkbox" name="iteam[]" > XYZ 
+						<input type="checkbox" name="iteam[]" > abc 
+						<input type="checkbox" name="iteam[]" > pqr
+					</td>
+				</tr>
+				<tr>
+					<td>file:  </td>
+					<td>  
+						<input type="file" name="image" value="">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">  
+						<input type="button" name="click" value="Click">
+						<input type="submit" name="click" value="Submit"> 
+						<input type="reset" name="click" value="reset">	
+					</td>
+				</tr>
+			</table>		
+		</fieldset>
+	</form>
+</body>
+</html>
