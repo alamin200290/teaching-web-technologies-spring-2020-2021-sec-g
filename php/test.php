@@ -1,3 +1,5 @@
+
+
 <?php
 	
 	//print 'Hello PHP';
@@ -101,4 +103,25 @@
 	echo "done!";
 	fclose($myfile);*/
 
+	echo "<h1>printing from <br> apache server....</h1>";
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> This is PHP page</title>
+</head>
+<body>
+	<h3>this is another section where we can write any text.... </h3>
+	<table border="1">
+		<tr>
+			<td>ID</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td>Alamin</td>
+		</tr>
+	</table>
+</body>
+</html>
