@@ -1,7 +1,11 @@
 <?php
-	session_start();
 	$title = "Home Page";
-	include('header.php');
+	//include('header.php');
+	//include('header.php');
+	//include_once('header.php');
+
+	require('header.php');
+	//require_once('header.php');
 ?>
 	
 	<h1>Welcome home, <?php echo $_SESSION['current_user']['username']; ?></h1>
