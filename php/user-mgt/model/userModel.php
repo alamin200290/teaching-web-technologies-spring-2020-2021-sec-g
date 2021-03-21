@@ -17,7 +17,7 @@ function validateUser($username, $password){
 
 function insertUser($user){
 	$conn = getConnection();
-	$sql = "insert into users values('', '{$user['username']}', '{$user['password']}', '{$user['email']}', '$user['type']')";
+	$sql = "insert into users values('', '{$user['username']}', '{$user['password']}', '{$user['email']}', '{$user['type']}')";
 
 	$result = mysqli_query($conn, $sql)
 
