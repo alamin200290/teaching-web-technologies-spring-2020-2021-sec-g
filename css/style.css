@@ -1,0 +1,46 @@
+div	{
+	color:red;
+	background-color: green; 
+	width: 100px; 
+	height: 100px;
+}
+
+#d1 {
+	position: relative;
+	top: 50px;
+	left: 300px;
+	color:blue;
+	background-color: red; 
+	width: 400px; 
+	height: 200px;
+	border: 2px solid #000;
+	/*margin: 10px 10px 10px 5px;*/
+	/*margin-bottom: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;*/
+	padding: 15px 5px;
+}
+
+
+#d2 {
+	position: absolute;
+	top: 40px;
+	left: 150px;
+	color:blue;
+	border-radius: 70px;
+	background-color: red; 
+	width: 120px; 
+	height: 120px;
+}	
+
+#d2:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.c1 {
+	background-color: #eee; 
+	width: 100px; 
+	height: 100px;
+}
