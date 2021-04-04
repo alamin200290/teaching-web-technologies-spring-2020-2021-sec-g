@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Example</title>
+</head>
+<body>
+	<h1 id='myid'>JS Example</h1>
+
+	<form>
+		<input type="text" name="name" id="name" value="" onkeyup="change()" />
+		<input type="button" name="" value="click" onclick="changeStyle()">
+	</form>
+	<div id="mydiv" style="width: 100px; height: 100px; background-color: green; position: relative;left: 5px">
+		
+	</div>
+
+	<script>
+		"use strict"
+
+		//a= 10;
+		//var b=20;
+
+		//let c=30;
+		//const d=40;
+		/*let arr = [12, 3, 'alamin', 4.0];
+
+		function sum(f1){
+			return f1();
+		}
+
+		let f1 = function(){
+			return 10;
+		}
+
+		let f2 = ()=>{
+			let a=10;
+			return 10;
+		}*/
+
+		//let data = sum(f1);
+
+/*		if(){
+
+		}else{
+
+		}
+
+		for (let i = 0; i >= 0; i++) {
+		}*/
+
+		//window.console.log('testing window object');
+		//window.alert('test');
+		//document.write('test');
+
+		function abc(){
+			//document.write('test');
+			//let obj = document.getElementsByTagName('h1')[0];
+			/*let obj = document.getElementById('myid');
+			obj.innerHTML = "Test";*/
+			document.getElementById('myid').innerHTML = "test";
+		}
+
+
+		function change(){
+			//alert('test');
+			/*let name = document.getElementById('name').value;
+			document.getElementById('myid').innerHTML = name;*/
+			document.getElementById('myid').innerHTML = document.getElementById('name').value;
+		}
+
+		function validate(){
+			
+			 let name= document.getElementById('name').value;
+
+			 if(name == ''){
+			 	 document.getElementById('myid').innerHTML = "null data...";
+			 }else{
+			 	document.getElementById('myid').innerHTML = name;
+			 }
+		}
+
+		function changeStyle(){
+
+			let val = document.getElementById('mydiv').style.left
+
+			if(val == null){
+				document.getElementById('mydiv').style.left = '150px';
+
+			}else{
+				// 15px split 15, px
+				// update = 15+15 + px
+				// document.getElementById('mydiv').style.left = update
+			}
+
+		}
+	</script>
+</body>
+</html>
