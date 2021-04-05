@@ -81,15 +81,21 @@
 
 		function changeStyle(){
 
-			let val = document.getElementById('mydiv').style.left
-
-			if(val == null){
-				document.getElementById('mydiv').style.left = '150px';
-
+			let pos = document.getElementById('mydiv').style.left;
+			if(pos == ""){
+				pos = "15px";
+				document.getElementById('mydiv').style.left = pos;
 			}else{
-				// 15px split 15, px
-				// update = 15+15 + px
-				// document.getElementById('mydiv').style.left = update
+				pos = parseInt(pos.replace('px', ''));
+				pos += 15;
+				document.getElementById('mydiv').style.left = pos+"px";
+			}
+
+			console.log(pos);
+			if(pos != 300){
+				setTimeout(function(){
+					changeStyle();
+				}, 1000);
 			}
 
 		}
